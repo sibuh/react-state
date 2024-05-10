@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import './style.css'
+import Form from './Form'
+import WindowTracker from "./WindowTracker";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App(){
+  // const[squares,setSquares]=React.useState(Data);
+  
+  // function toggle(id){
+  //   setSquares(pevSquares=>{
+  //     return pevSquares.map(square=>{
+  //       return square.id ===id? {...square,on:!square.on}:square
+  //     })
+  //   })
+  // }
+  // const sqrs=squares.map(sqr=>{
+  //  return <Box 
+  //  id = {sqr.id}
+  //  on = {sqr.on}
+  //  key = {sqr.id}
+  //  toggle = {toggle}
+  //  />
+  // })
+
+  return(
+    <main className="main">
+       {/* {sqrs} */}
+       <Form />
+       <WindowTracker />
+    </main>
+     
+   )
 }
-
-export default App;
